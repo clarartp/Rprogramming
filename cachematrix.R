@@ -7,7 +7,6 @@
 # 4. get the value of the inverse
 
 makeCacheMatrix<- function (x=matrix()) {
-
   i<-NULL
   set<-function(y)
   {
@@ -20,8 +19,7 @@ getinverse<-function() i
 list(set=set,get=get,setinverse=setinverse,getinverse=getinverse)
 }
 
-
-#CacheSolve  will compute the inverse of the matrix returned 
+#Cachesolve  will compute the inverse of the matrix returned 
 #by  the above function makeCacheMtrix. In the case the inverse 
 #has already been calculated will get the value from the cache and 
 #skip the computation. Otherwise, it will compute it
